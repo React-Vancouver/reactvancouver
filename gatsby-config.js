@@ -1,42 +1,34 @@
 module.exports = {
-  siteMetadata: {
-    title: 'React Vancouver',
-    siteUrl: `https://reactvancouver.com`,
-    description: `Join one of the biggest tech communities in Vancouver`,
-  },
-  plugins: [
-    {
-      resolve: 'gatsby-source-contentful',
-      options: {
-        spaceId: '019o3pe3du31',
-        accessToken:
-          'ede76a7cd0de9ecd143668c44ead2ef2a642e85f2ea6d6c4ac206f4478556174',
-      },
+    siteMetadata: {
+        title: `Gatsby Default Starter`,
+        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+        author: `@gatsbyjs`,
     },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-109965261-1',
-        head: false,
-        anonymize: true,
-        respectDNT: true,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'React Vancouver',
-        short_name: 'React Vancouver',
-        start_url: '/',
-        background_color: '#F9F9FB',
-        display: 'minimal-ui',
-        icon: 'static/favicon.png',
-      },
-    },
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-react-helmet',
-    'gatsby-transformer-remark',
-    // 'gatsby-plugin-eslint',
-  ],
+    plugins: [
+        `gatsby-plugin-react-helmet`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/images`,
+            },
+        },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `gatsby-starter-default`,
+                short_name: `starter`,
+                start_url: `/`,
+                background_color: `#663399`,
+                theme_color: `#663399`,
+                display: `minimal-ui`,
+                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+            },
+        },
+        // this (optional) plugin enables Progressive Web App + Offline functionality
+        // To learn more, visit: https://gatsby.dev/offline
+        // `gatsby-plugin-offline`,
+    ],
 }

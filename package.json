@@ -1,53 +1,49 @@
 {
-  "name": "reactvancouver",
-  "description": "Public website for React Vancouver",
-  "version": "0.1.0",
-  "private": true,
-  "license": "MIT",
-  "scripts": {
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free-brands": "^5.0.13",
-    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
-    "@fortawesome/free-brands-svg-icons": "^5.1.0",
-    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
-    "@fortawesome/react-fontawesome": "^0.1.0-11",
-    "classnames": "^2.2.6",
-    "emotion": "^9.2.6",
-    "emotion-server": "^9.2.4",
-    "facepaint": "^1.2.1",
-    "gatsby": "^2.0.0-beta.23",
-    "gatsby-image": "next",
-    "gatsby-link": "next",
-    "gatsby-plugin-emotion": "next",
-    "gatsby-plugin-google-analytics": "next",
-    "gatsby-plugin-google-fonts": "^0.0.4",
-    "gatsby-plugin-manifest": "^1.0.27",
-    "gatsby-plugin-react-helmet": "next",
-    "gatsby-plugin-sitemap": "^1.2.25",
-    "gatsby-source-contentful": "next",
-    "gatsby-transformer-remark": "next",
-    "lodash": "^4.17.10",
-    "moment": "^2.22.2",
-    "path": "^0.12.7",
-    "polished": "^1.9.3",
-    "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-emotion": "^9.2.4",
-    "react-helmet": "^5.2.0",
-    "slash": "^2.0.0"
-  },
-  "devDependencies": {
-    "babel-eslint": "^8.2.5",
-    "eslint": "^5.0.0",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-react": "^7.9.1",
-    "gatsby-plugin-eslint": "^1.0.3"
-  }
+    "name": "react-vancouver-website",
+    "private": false,
+    "description": "ReactVancouver website",
+    "version": "2.0.0",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/React-Vancouver/reactvancouver"
+    },
+    "bugs": {
+        "url": "https://github.com/React-Vancouver/reactvancouver/issues"
+    },
+    "scripts": {
+        "build": "gatsby build",
+        "clean": "gatsby clean",
+        "develop": "gatsby develop",
+        "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+        "generate": "plop",
+        "serve": "gatsby serve",
+        "start": "npm run develop",
+        "test": "jest"
+    },
+    "dependencies": {
+        "gatsby": "^2.18.4",
+        "gatsby-image": "^2.2.34",
+        "gatsby-plugin-manifest": "^2.2.30",
+        "gatsby-plugin-offline": "^3.0.24",
+        "gatsby-plugin-react-helmet": "^3.1.16",
+        "gatsby-plugin-sharp": "^2.3.4",
+        "gatsby-source-filesystem": "^2.1.39",
+        "gatsby-transformer-sharp": "^2.3.6",
+        "prop-types": "^15.7.2",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-helmet": "^5.2.1"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "babel-jest": "^24.9.0",
+        "babel-preset-gatsby": "^0.2.23",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^24.9.0",
+        "plop": "^2.5.3",
+        "prettier": "^1.19.1",
+        "react-test-renderer": "^16.12.0"
+    }
 }

@@ -1,8 +1,0 @@
-export { default as Buttons } from './Buttons'
-export { default as Colors } from './Colors'
-export { default as Forms } from './Forms'
-export { default as Layout } from './Layout'
-export { default as Shadows } from './Shadows'
-export { default as Typography } from './Typography'
-export { default as Box } from './Box'
-export { default as Images } from './Images'
