@@ -2,12 +2,12 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 // import { render } from "@testing-library/react"
 
-import Shell from './Shell'
+import {{pascalCase name}} from './{{pascalCase name}}'
 
-describe('Shell', () => {
+describe('{{pascalCase name}}', () => {
     it('renders correctly', () => {
         const tree = renderer
-            .create(<Shell />)
+            .create(<{{pascalCase name}} />)
             .toJSON()
         expect(tree).toMatchSnapshot()
     })
