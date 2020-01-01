@@ -1,10 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 // import { Global } from '@emotion/core'
 // import { GLOBAL_STYLES } from 'Global'
 
 const Shell = ({ children }) => {
-
     return (
         <>
             {/* <Global
@@ -12,11 +11,11 @@ const Shell = ({ children }) => {
             /> */}
             {children}
         </>
-    )
-}
+    );
+};
 
 Shell.propTypes = {
     children: PropTypes.node.isRequired,
-}
+};
 
-export default Shell
+export default Shell;
